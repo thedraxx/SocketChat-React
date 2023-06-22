@@ -20,7 +20,8 @@ io.on("connection", (socket) => {
         console.log(body);
         socket.broadcast.emit("message", {
             body,
-            from: socket.id.slice(8)
+            from: socket.id.slice(8),
+            date: new Date().toLocaleTimeString([], { timeStyle: 'short' })
         });
     });
 })
