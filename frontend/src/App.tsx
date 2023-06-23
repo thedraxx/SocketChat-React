@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from 'react';
 import io from "socket.io-client"
 import Inputs from "./helpers/Inputs"
 import { Message } from "./interface/IbodyMessage"
@@ -6,7 +6,12 @@ const socket = io("/")
 
 const App = () => {
 
-  const { message, setMessage, messages, setMessages, reciveMessage } = Inputs()
+  const [message, setMessage] = useState("")
+  const [messages, setMessages] = useState<Message[]>([])
+
+  const reciveMessage = (message: Message) => {
+    setMessages((state) => ([...state, message]))
+  }
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -78,6 +83,7 @@ const App = () => {
             className="border-2 border-black py-2 w-6/12 rounded-xl bg-slate-700"
           />4
         </div>
+        <button type="submit" className="hidden">Submit</button>
       </form>
     </div>
   )
