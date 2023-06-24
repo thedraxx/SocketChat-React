@@ -14,9 +14,12 @@ https://github.com/thedraxx/SocketChat-React/assets/55867157/c57ac6cb-da21-4bbf-
 ```
 ## ⚛️ React
 ```
+```
 ## ⚛️ Node.js
 ```
+```
 ## ⚛️ Tailwind
+```
 ```
 ## ⚛️ Vitest (Testing)
 ```
