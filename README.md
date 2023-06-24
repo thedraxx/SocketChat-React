@@ -6,7 +6,7 @@ This is a Fullstack Socket Chat - Made in React.js / Node.js - ViteTest
 https://github.com/thedraxx/SocketChat-React/assets/55867157/c57ac6cb-da21-4bbf-9e6f-5c34e715d4aa
 
 ## 🎥 A little video of the App:
-![Screenshot_1](https://github.com/thedraxx/SocketChat-React/assets/55867157/847f20a9-a0e3-4fce-b557-e278ad4c67e6)
+
 ![1](https://github.com/thedraxx/SocketChat-React/assets/55867157/9b4acd2a-e5e7-4761-8b57-27f8e6c3932a)
 
 <br> The app is made with the following technologies:</br>
